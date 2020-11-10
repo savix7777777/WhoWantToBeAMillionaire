@@ -1,5 +1,5 @@
 import React,{ useState,useEffect } from 'react';
-import { BrowserRouter,Route } from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import GameStart from "./sections/GameStart";
 import './styles/index.scss';
 import Question from "./sections/Question";
@@ -15,7 +15,11 @@ const App = () => {
     });
 
   return (
-      <BrowserRouter>
+      <HashRouter
+          hashType={"slash"}
+          basename={"/game"}
+      >
+          <>
               <Route exact path='/'>
                   <GameStart gameConfig={gameConfig}/>
               </Route>
@@ -31,7 +35,8 @@ const App = () => {
                       </Route>
                   )
               })}
-      </BrowserRouter>
+          </>
+      </HashRouter>
   );
 }
 
