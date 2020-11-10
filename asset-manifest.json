@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/testGame/static/css/main.344c2ac8.chunk.css",
+    "main.js": "/testGame/static/js/main.54d6817c.chunk.js",
+    "main.js.map": "/testGame/static/js/main.54d6817c.chunk.js.map",
+    "runtime-main.js": "/testGame/static/js/runtime-main.f847c18c.js",
+    "runtime-main.js.map": "/testGame/static/js/runtime-main.f847c18c.js.map",
+    "static/js/2.b53204b8.chunk.js": "/testGame/static/js/2.b53204b8.chunk.js",
+    "static/js/2.b53204b8.chunk.js.map": "/testGame/static/js/2.b53204b8.chunk.js.map",
+    "static/js/3.87c44afe.chunk.js": "/testGame/static/js/3.87c44afe.chunk.js",
+    "static/js/3.87c44afe.chunk.js.map": "/testGame/static/js/3.87c44afe.chunk.js.map",
+    "index.html": "/testGame/index.html",
+    "static/css/main.344c2ac8.chunk.css.map": "/testGame/static/css/main.344c2ac8.chunk.css.map",
+    "static/js/2.b53204b8.chunk.js.LICENSE.txt": "/testGame/static/js/2.b53204b8.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/testGame/static/media/Inter-LightBETA (1).a87a1bff.ttf",
+    "static/media/hand.7e02f3f6.png": "/testGame/static/media/hand.7e02f3f6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f847c18c.js",
+    "static/js/2.b53204b8.chunk.js",
+    "static/css/main.344c2ac8.chunk.css",
+    "static/js/main.54d6817c.chunk.js"
+  ]
+}
