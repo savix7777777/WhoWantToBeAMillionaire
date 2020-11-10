@@ -1,0 +1,59 @@
+.gain-panel{
+  &-phone{
+    display: none;
+    transition: width 0.5s;
+    width: 100%;
+    z-index: 600;
+    min-height: 38em;
+    background-color: #F5F5F7;
+  }
+
+  min-height: 60em;
+  @include flex-center;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+
+  &-return{
+    position: absolute;
+    @include flex-center;
+  }
+
+  &__gain{
+    @include flex-center;
+    background-color: #D0D0D8;
+    @include answerButton;
+    min-height: 1.7em;
+    font-size: 20px;
+    line-height: 116%;
+    color: #1C1C21;
+    width: 100%;
+    margin: 1% 0;
+    cursor: unset;
+    clip-path: polygon(0 49%, 20% 49%, 25% 0, 75% 0, 80% 49%, 100% 49%, 100% 51%, 80% 51%, 75% 100%, 25% 100%, 20% 51%, 0 51%);
+
+    &-passed{
+      color: #D0D0D8;
+    }
+
+    &-actual{
+      color: #FF8B37;
+      background-color: #FF8B37;
+    }
+
+    &-future{
+      font-weight: 600;
+    }
+
+    & p{
+      z-index: 500;
+    }
+  }
+
+  &__gain:before{
+    background-color: white;
+    @include answerButtonBefore;
+    clip-path: polygon(0 50%, 20% 50%, 25% 0, 75% 0, 80% 50%, 100% 50%, 80% 50%, 75% 100%, 25% 100%, 20% 50%, 0 50%);
+    min-height: 1.6em;
+  }
+}

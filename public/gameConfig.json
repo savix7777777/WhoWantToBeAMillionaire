@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What children shout in unison at the New Year's holiday?",
+    "answers": ["Heeeelp!", "'Real' champion!", "Snow Maiden", "Goal!"],
+    "correctAnswers": ["Snow Maiden"],
+    "gain": "$500"
+  },
+  {
+    "question": "Where are the gutters mentioned in the fairy tale 'Kolobok'?",
+    "answers": ["In the barn", "In the garden", "In the bath", "On the field"],
+    "correctAnswers": ["In the barn"],
+    "gain": "$1,000"
+  },
+  {
+    "question": "What can be found in the shells of some shellfish?",
+    "answers": ["Amber", "Pearl", "Aquamarine", "Malachite"],
+    "correctAnswers": ["Pearl"],
+    "gain": "$2,000"
+  },
+  {
+    "question": "Who needs traces in work?",
+    "answers": ["Blacksmith", "Cab", "Surgeon", "Hunter"],
+    "correctAnswers": ["Cab"],
+    "gain": "$4,000"
+  },
+  {
+    "question": "Who was Aunt Axal in the 'Kingdom of Crooked Mirrors'?",
+    "answers": ["Laundress", "Queen", "Gentlewoman", "Cook"],
+    "correctAnswers": ["Cook"],
+    "gain": "$8,000"
+  },
+  {
+    "question": "That not a dairy product, but a dish of vegetables and meat?",
+    "answers": ["Dymlyama", "Kaymak", "Katyk", "Matsoni"],
+    "correctAnswers": ["Dymlyama"],
+    "gain": "$16,000"
+  },
+  {
+    "question": "What gas filled the shells of the world's first airships?",
+    "answers": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
+    "correctAnswers": ["Hydrogen"],
+    "gain": "$32,000"
+  },
+  {
+    "question": "Who was the inventor of the cotton candy machine, William Morrison, by profession?",
+    "answers": ["Mechanic", "Dentist", "Confectioner", "Potter"],
+    "correctAnswers": ["Dentist"],
+    "gain": "$64,000"
+  },
+  {
+    "question": "Which animal has a navel?",
+    "answers": ["Platypus", "Whale", "Komodo dragon", "Kangaroo"],
+    "correctAnswers": ["Whale"],
+    "gain": "$125,000"
+  },
+  {
+    "question": "The total length of which sporting weapon should not exceed 105 centimeters?",
+    "answers": ["Rapier", "Epee", "Saber", "All three"],
+    "correctAnswers": ["Saber"],
+    "gain": "$250,000"
+  },
+  {
+    "question": "What was the name of Khlestakov, the hero of Gogol's comedy 'Revisor'?",
+    "answers": ["Peter", "Ivan", "Alexander", "Nikolay"],
+    "correctAnswers": ["Ivan"],
+    "gain": "$500,000"
+  },
+  {
+    "question": "An unusual property of which was given the name to the Impatiens plant?",
+    "answers": ["Leaves", "Fruits", "Stem", "Flowers"],
+    "correctAnswers": ["Fruits"],
+    "gain": "$1,000,000"
+  }
+]

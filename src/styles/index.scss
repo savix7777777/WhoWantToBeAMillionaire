@@ -1,0 +1,293 @@
+@import "reset";
+@import "mixins";
+@import "sections/game-start";
+@import "fonts/index";
+@import "sections/question";
+@import "components/gain-panel";
+
+#root{
+  @include flex-center;
+  background-color: #E5E5E5;
+  height: 56.4em;
+}
+
+button:active, button:focus, select:focus{
+  outline: none;
+}
+
+@media (max-width: 1700px){
+  .game-start{
+    background: linear-gradient(146.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 1230px){
+  .game-start{
+    background: linear-gradient(144.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 1130px){
+  .game-start{
+    background: linear-gradient(141.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 1030px){
+  .game-start{
+    background: linear-gradient(139.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 830px){
+  .game-start{
+    flex-direction: column;
+    background: linear-gradient(132.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+
+@media (max-width: 730px){
+  .game-start{
+    background: linear-gradient(130.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+
+@media (max-width: 630px){
+  .game-start{
+    background: linear-gradient(124.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+
+@media (max-width: 530px){
+  .game-start{
+    background: linear-gradient(119.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+
+@media (max-width: 430px){
+  .game-start{
+    background: linear-gradient(116.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 320px) {
+  .question{
+    height: 40em;
+  }
+
+  .game-start{
+    background: linear-gradient(111.5deg, #FFFFFF 50%, #FFF3EB 50%) !important;
+  }
+}
+
+@media (max-width: 930px) {
+
+  #root{
+    height: 40em;
+    background-color: #F5F5F7;
+  }
+  
+  .game-start{
+    flex-direction: column;
+    background: linear-gradient(113.5deg, #FFFFFF 50%, #FFF3EB 50%);
+
+    &__right-box{
+      @include flex-center;
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+    }
+
+    &__start{
+      width: 100%;
+    }
+
+    &__h1{
+      width: 100%;
+    }
+
+    &__hand{
+      transform: scale(0.6);
+      margin-top: 20%;
+    }
+  }
+
+  .question{
+    min-height: 25em;
+    background-color: #F5F5F7;
+
+    &-return{
+      width: 25%;
+    }
+
+    &__show-gain{
+      @include flex-center;
+    }
+
+    &__answer{
+      width: 90%;
+
+      &-red, &-green{
+        width: 90%;
+      }
+    }
+
+    &__answer:before{
+      width: 99.5%;
+    }
+
+    &__content{
+      min-height: auto;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &__title{
+      margin-right: 0;
+      width: 90%;
+      margin-top: 30%;
+      text-align: center;
+    }
+
+    &__answers-box{
+      flex-direction: column;
+      margin-right: 0;
+      width: 100%;
+      margin-top: 12%;
+      min-height: 18em;
+      justify-content: space-around;
+    }
+  }
+
+  .gain-panel{
+
+    &-phone{
+      display: flex;
+    }
+
+    display: none;
+  }
+}
+
+@media (min-height: 730px) {
+  #root{
+    height: 46em;
+  }
+
+  .question {
+    &__content {
+      height: 45em;
+    }
+
+    &__title {
+      margin-top: 40%;
+    }
+
+    &__answer-box{
+      margin-top: 20%;
+    }
+  }
+
+  .gain-panel-phone{
+    margin-top: 5%;
+  }
+}
+
+@media (min-height: 820px) {
+  #root{
+    height: 52em;
+  }
+
+  .game-start{
+    height: 52em;
+    background: linear-gradient(116.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 376px) {
+  #root{
+    height: 42em;
+  }
+
+  .game-start{
+    background: linear-gradient(114.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (max-width: 415px) {
+  .game-start{
+    background: linear-gradient(117.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (min-height: 812px) {
+  #root{
+    height: 51em;
+  }
+
+  .game-start{
+    min-height: 52em;
+    background: linear-gradient(114.5deg, #FFFFFF 50%, #FFF3EB 50%);
+  }
+}
+
+@media (min-width: 768px) {
+  #root{
+    height: 64em;
+  }
+
+  .game-start{
+    min-height: 64em;
+    min-width: 80%;
+  }
+
+  .question__content{
+    height: 60em;
+  }
+
+  .gain-panel-phone{
+    min-height: 60em;
+    margin-top: 0;
+  }
+
+  .question__answer:before{
+    width: 99.7%;
+    height: 2.93em;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .game-start{
+    background: linear-gradient(151.3deg, #FFFFFF 50%, #FFF3EB 50%);
+    min-height: 45em;
+    min-width: 80%;
+  }
+
+  .question{
+    height: 45em;
+  }
+
+  .question__content{
+    height: 40em !important;
+  }
+
+  .question__title{
+    margin-top: 0;
+  }
+
+  .gain-panel{
+    min-height: 50em;
+  }
+}
+
+@media (min-height: 11000px){
+  .game-start{
+    height: 45em !important;
+  }
+}

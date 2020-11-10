@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{ useState,useEffect } from 'react';
+import { BrowserRouter,Route } from 'react-router-dom';
+import GameStart from "./sections/GameStart";
+import './styles/index.scss';
+import Question from "./sections/Question";
 
-function App() {
+const App = () => {
+
+    const [gameConfig,setGameConfig] = useState([]);
+
+    useEffect(() => {
+        fetch('./gameConfig.json')
+            .then(response => response.json())
+            .then(result => setGameConfig(result));
+    });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+              <Route exact path='/'>
+                  <GameStart gameConfig={gameConfig}/>
+              </Route>
+              {gameConfig && gameConfig.map((elem,index) => {
+                  return(
+                      <Route path={`/question-${index+1}`} key={`${index}-route`}>
+                          <Question
+                              questionNumber={index+1}
+                              key={index}
+                              data={gameConfig}
+                              {...elem}
+                          />
+                      </Route>
+                  )
+              })}
+      </BrowserRouter>
   );
 }
 
